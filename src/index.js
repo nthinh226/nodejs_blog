@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 console.log(path.join(__dirname, 'public'));
 
 //HTTP Logger
-app.use(morgan('combined'));
+// app.use(morgan('combined'));
 
 //Template Engine
 app.engine('.hbs', engine({
@@ -21,6 +21,14 @@ app.set('views', path.join(__dirname, './resources/views'));
 
 app.get('/', (req, res) => {
   res.render('home');
+})
+app.get('/news', (req, res) => {
+
+  res.render('news');
+})
+app.get('/search', (req, res) => {
+  console.log(req.query.q);
+  res.render('search');
 })
 
 app.listen(port, () => {
