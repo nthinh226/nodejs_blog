@@ -5,6 +5,10 @@ const morgan = require('morgan');
 const app = express();
 const port = 3000;
 
+//Static file
+app.use(express.static(path.join(__dirname, 'public')));
+console.log(path.join(__dirname, 'public'));
+
 //HTTP Logger
 app.use(morgan('combined'));
 
