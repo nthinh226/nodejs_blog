@@ -35,7 +35,7 @@
   ,
   
   "hooks": {
-    "pre-commit": "int-staged"
+    "pre-commit": "lint-staged"
   }
   ,
   "devDependencies": {
