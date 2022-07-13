@@ -7,4 +7,4 @@ const newsControllers = require('../app/controllers/NewsControllers');
        router.use('/tin-tuc', newsControllers.tintuc);
         router.use('/', newsControllers.index);
 
-module.exports =        router;
+            module.exports =        router;
