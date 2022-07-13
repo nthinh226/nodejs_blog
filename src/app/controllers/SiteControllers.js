@@ -10,4 +10,4 @@ class SiteControllers {
     }
 }
 
-module.exports = new SiteControllers;
+module.exports = new SiteControllers();
