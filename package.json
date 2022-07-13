@@ -29,17 +29,14 @@
     "express-handlebars": "^6.0.6"
   },
   
-    "lint-staged": {
-      "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
-    }
-  ,
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
   "husky":{
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  }
-
-  ,
+  },
   "devDependencies": {
     "husky": "^8.0.1",
     "install": "^0.13.0",
