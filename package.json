@@ -34,9 +34,9 @@
     }
   ,
   
-    "hooks": {
-      "pre-commit": "int-staged"
-    }
+  "hooks": {
+    "pre-commit": "int-staged"
+  }
   ,
   "devDependencies": {
     "husky": "^8.0.1",
